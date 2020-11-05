@@ -1,8 +1,8 @@
 import random
 
-horror_movies = ["Halloween", "Friday the 13th", "The Shining", "Trick 'r Treat", "Scream"]
-comedy_movies = ["Monty Python and the Holy Grail", "School of Rock", "The Blues Brothers"]
-fantasy_movies = ["Star Wars - A New Hope", "Lord of the Rings", "Harry Potter and the Sorcerer's Stone"]
+horror_movies = ["Halloween", "Friday the 13th", "The Shining", "Trick 'r Treat", "Nightmare on Elm Street"]
+comedy_movies = ["Monty Python and the Holy Grail", "School of Rock", "The Blues Brothers", "Mean Girls", "Mrs. Doubtfire"]
+fantasy_movies = ["Star Wars", "Lord of the Rings", "Harry Potter", "The Chronicles of Narnia", "The Hobbit"]
 
 choose_genre = input("Pick one of the following genres - Horror, Comedy, or Fantasy: ")
 
@@ -14,7 +14,7 @@ def genre():
         print("Ahh yes, " + choose_genre + ", " + "get ready for a laugh!")
         print("You should watch", random.choice(comedy_movies) + "!")
     elif choose_genre == "Fantasy":
-        print(choose_genre + ", " + "time to travel to a galaxy far, far away, the Shire, or Hogwarts!")
+        print(choose_genre + ". " + "Great choice, time to escape reality!")
         print("You should watch", random.choice(fantasy_movies) + "!")
     else:
         try:
