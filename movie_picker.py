@@ -2,9 +2,12 @@
 
 import random
 
+# Added help function for instructions on how to retrieve a movie suggestion
+
 def help():
+    print("Hey there, looking for a movie to watch? Follow these instructions to get some great suggestions!:")
     print("""
-Enter one of the following genres you would like a suggestion from: 'Horror', 'Comedy', or 'Fantasy'.
+Enter one of the following genres you would like a movie suggestion from: 'Horror', 'Comedy', or 'Fantasy'.
 Enter 'E' to exit program.
 """)
 
@@ -19,7 +22,7 @@ fantasy_movies = ["Star Wars", "Lord of the Rings", "Harry Potter", "The Chronic
 help()
 while True:
 
-    choose_genre = input("Pick one of the following genres - Horror, Comedy, or Fantasy (type E to exit): ")
+    choose_genre = input("Enter a genre or exit program: ")
     choose_genre = choose_genre.lower().replace(" ", "")
 
     if choose_genre == "E".lower().replace(" ", ""):
