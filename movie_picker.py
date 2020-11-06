@@ -1,8 +1,14 @@
-# Imported random module to populate a random movie from the list when a genre is chosen when the program runs
+# Imported random module to populate a random movie from the lists when program runs and genre is chosen.
 
 import random
 
-# Created pre-populated lists with movies separated into genres to be retrieved when program runs
+def help():
+    print("""
+Enter one of the following genres you would like a suggestion from: 'Horror', 'Comedy', or 'Fantasy'.
+Enter 'E' to exit program.
+""")
+
+# Created pre-populated lists with movies separated into genres to be retrieved when program runs.
 
 horror_movies = ["Halloween", "Friday the 13th", "The Shining", "Trick 'r Treat", "Nightmare on Elm Street"]
 comedy_movies = ["Monty Python and the Holy Grail", "School of Rock", "The Blues Brothers", "Mean Girls", "Mrs. Doubtfire"]
@@ -10,6 +16,7 @@ fantasy_movies = ["Star Wars", "Lord of the Rings", "Harry Potter", "The Chronic
 
 # Beginning of Master Loop
 
+help()
 while True:
 
     choose_genre = input("Pick one of the following genres - Horror, Comedy, or Fantasy (type E to exit): ")
