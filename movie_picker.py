@@ -11,17 +11,21 @@ Enter one of the following genres you would like a movie suggestion from: 'Horro
 Enter 'E' to exit program.
 """)
 
-# Added snack suggestion when movie is picked and is called in Master Loop
+# Added snack and drink suggestion functions when movie is picked. Both functions are called in Master Loop.
 
 def snack_ideas():
     print("Snack suggestion:", random.choice(snacks))
+
+def drink_ideas():
+    print("Drink suggestion:", random.choice(drinks))
 
 # Created pre-populated lists with movies separated into genres to be retrieved when program runs.
 
 horror_movies = ["Halloween", "Friday the 13th", "The Shining", "Trick 'r Treat", "Nightmare on Elm Street"]
 comedy_movies = ["Monty Python and the Holy Grail", "School of Rock", "The Blues Brothers", "Mean Girls", "Mrs. Doubtfire"]
 fantasy_movies = ["Star Wars", "Lord of the Rings", "Harry Potter", "The Chronicles of Narnia", "The Hobbit"]
-snacks = ["Popcorn", "Nachos", "Cookie Dough Bites", "Snowcaps", "a Hot Dog"]
+snacks = ["Popcorn", "Nachos", "Cookie Dough Bites", "Snowcaps", "Hot Dog"]
+drinks = ["Cherry Coke", "Sprite", "Root Beer", "Milkshake", "ICEE"]
 
 # Beginning of Master Loop
 
@@ -40,7 +44,7 @@ while True:
         print("Ahh yes, " + choose_genre + ", " + "get ready for a laugh!")
         print("You should watch", random.choice(comedy_movies) + "!")
     elif choose_genre == "Fantasy".lower().replace(" ", ""):
-        print(choose_genre + ". " + "Great choice, time to escape reality!")
+        print("Time to escape reality with a", choose_genre + "!")
         print("You should watch", random.choice(fantasy_movies) + "!")
     else:
         try:
@@ -49,3 +53,4 @@ while True:
             print("Please choose from the 3 genres listed.")
 
     snack_ideas()
+    drink_ideas()
