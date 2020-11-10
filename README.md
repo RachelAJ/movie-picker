@@ -1,13 +1,14 @@
 Python README.md
 
-This movie picker will randomly choose a movie suggestion from a pre-defined list as well as give a snack and drink suggestion to go along with the movie! 
+This movie picker will randomly choose a movie suggestion from a pre-populated list as well as give a snack and drink suggestion to go along with the movie! 
 
 Directions:
-Run in Python3 console
-The program will give you three genres to choose from. Type in one of the genres you would like a movie selection from or choose 'E' to exit.
+Run in Python3 console (may have to pip install random)
+The program will give you three genres to choose from (Horror, Comedy, or Fantasy). 
+Type in one of the genres you would like a movie selection from or choose 'E' to exit.
 
 Project requirements met:
-1. Created lists, populated them with several values, retrieved at least one value, and used it in the program.
+1. Created lists, populated them with several values, retrieved values from list when program runs.
 2. Implemented a Master Loop where the user can repeatedly enter commands including choosing to exit the program.
 3. Created and calls at least 3 functions within the program: help() snack_ideas() drink_ideas()
 
